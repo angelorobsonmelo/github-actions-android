@@ -1,6 +1,6 @@
 name: Android Build
 
-on: commit
+on: pull_request
 
 jobs:
 
@@ -17,7 +17,7 @@ jobs:
       - name: Set Up JDK
         uses: actions/setup-java@v1
         with:
-           java-version: 1.8
+          java-version: 1.8
 
 
       - name: Run Tests
